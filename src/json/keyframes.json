@@ -1,0 +1,13 @@
+{
+    "empty": [
+        "{ }"
+    ],
+    "-hightlight-light": [
+        "0%", "background-color",
+        "100%", "background-color"
+    ],
+    "-hightlight-dark": [
+        "0%", "background-color",
+        "100%", "background-color"
+    ]
+}

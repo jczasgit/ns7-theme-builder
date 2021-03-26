@@ -1,0 +1,777 @@
+{
+    "Button, .nt-button ": [
+        "background-color",
+        "color",
+        "}"
+    ],
+    ".ns-dark Button, .ns-dark .nt-button ": [
+        "background-color",
+        "color",
+        "}"
+    ],
+    "Button:active, Button.-active, .nt-button:active, .nt-button.-active ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark Button:active, .ns-dark Button.-active, .ns-dark .nt-button:active, .ns-dark .nt-button.-active ": [
+        "color",
+        "}"
+    ],
+    "Button.-outline, .nt-button.-outline ": [
+        "background-color",
+        "border-color",
+        "}"
+    ],
+    ".ns-dark Button.-outline, .ns-dark .nt-button.-outline ": [
+        "background-color",
+        "border-color",
+        "}"
+    ],
+    "    0% ": [
+        "background-color",
+        "}"
+    ],
+    "    100% ": [
+        "background-color",
+        "}",
+        "}"
+    ],
+    "Button.-outline:active, Button.-outline.-active, .nt-button.-outline:active, .nt-button.-outline.-active ": [
+        "animation",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark Button.-outline:active, .ns-dark Button.-outline.-active, .ns-dark .nt-button.-outline:active, .ns-dark .nt-button.-outline.-active ": [
+        "animation",
+        "background-color",
+        "}"
+    ],
+    "Button.-primary, .nt-button.-primary ": [
+        "color",
+        "background-color",
+        "border-color",
+        "}"
+    ],
+    ".ns-dark Button.-primary, .ns-dark .nt-button.-primary ": [
+        "color",
+        "background-color",
+        "border-color",
+        "}"
+    ],
+    "Button.-primary:active, Button.-primary.-active, .nt-button.-primary:active, .nt-button.-primary.-active ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark Button.-primary:active, .ns-dark Button.-primary.-active, .ns-dark .nt-button.-primary:active, .ns-dark .nt-button.-primary.-active ": [
+        "background-color",
+        "}"
+    ],
+    "ActivityIndicator, .nt-activity-indicator ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark ActivityIndicator, .ns-dark .nt-activity-indicator ": [
+        "color",
+        "}"
+    ],
+    "SegmentedBar, .nt-segmented-bar ": [
+        "color",
+        "background-color",
+        "selected-background-color",
+        "}"
+    ],
+    ".ns-dark SegmentedBar, .ns-dark .nt-segmented-bar ": [
+        "color",
+        "background-color",
+        "selected-background-color",
+        "}"
+    ],
+    ".ns-ios SegmentedBar, .ns-ios .nt-segmented-bar ": [
+        "margin",
+        "}"
+    ],
+    "Progress, .nt-progress ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark Progress, .ns-dark .nt-progress ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "Slider, .nt-slider ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark Slider, .ns-dark .nt-slider ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "Slider[isEnabled=false], .ns-android Slider[isEnabled=false], .nt-slider[isEnabled=false], .ns-android .nt-slider[isEnabled=false] ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "SearchBar, .nt-search-bar ": [
+        "color",
+        "background-color",
+        "text-field-hint-color",
+        "text-field-background-color",
+        "}"
+    ],
+    ".ns-dark SearchBar, .ns-dark .nt-search-bar ": [
+        "color",
+        "background-color",
+        "text-field-hint-color",
+        "text-field-background-color",
+        "}"
+    ],
+    ".ns-android Switch, .ns-android .nt-switch ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark.ns-android Switch, .ns-dark.ns-android .nt-switch ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-android Switch[checked=true], .ns-android .nt-switch[checked=true] ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark.ns-android Switch[checked=true], .ns-dark.ns-android .nt-switch[checked=true] ": [
+        "color",
+        "}"
+    ],
+    ".ns-android Switch[isEnabled=false], .ns-android .nt-switch[isEnabled=false] ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark.ns-android Switch[isEnabled=false], .ns-dark.ns-android .nt-switch[isEnabled=false] ": [
+        "color",
+        "}"
+    ],
+    ".ns-ios Switch, .ns-ios .nt-switch ": [
+        "color",
+        "background-color",
+        "off-background-color",
+        "}"
+    ],
+    ".ns-dark.ns-ios Switch, .ns-dark.ns-ios .nt-switch ": [
+        "color",
+        "background-color",
+        "off-background-color",
+        "}"
+    ],
+    ".ns-ios Switch[isEnabled=false], .ns-ios .nt-switch[isEnabled=false] ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark.ns-ios Switch[isEnabled=false], .ns-dark.ns-ios .nt-switch[isEnabled=false] ": [
+        "background-color",
+        "}"
+    ],
+    "TabView, .nt-tab-view ": [
+        "selected-tab-text-color",
+        "tab-background-color",
+        "tab-text-color",
+        "android-selected-tab-highlight-color",
+        "}"
+    ],
+    ".ns-dark TabView, .ns-dark .nt-tab-view ": [
+        "selected-tab-text-color",
+        "tab-background-color",
+        "tab-text-color",
+        "android-selected-tab-highlight-color",
+        "}"
+    ],
+    "TabView.ns-dark, .nt-tab-view.ns-dark ": [
+        "selected-tab-text-color",
+        "tab-background-color",
+        "tab-text-color",
+        "android-selected-tab-highlight-color",
+        "}"
+    ],
+    "TabStrip, .nt-tab-strip ": [
+        "highlight-color",
+        "background",
+        "}"
+    ],
+    ".ns-dark TabStrip, .ns-dark .nt-tab-strip ": [
+        "highlight-color",
+        "background",
+        "}"
+    ],
+    "TabStripItem, .nt-tab-strip__item ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark TabStripItem, .ns-dark .nt-tab-strip__item ": [
+        "color",
+        "}"
+    ],
+    "TabStripItem:active, TabStripItem:active Label, .nt-tab-strip__item:active, .nt-tab-strip__item:active Label ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark TabStripItem:active, .ns-dark TabStripItem:active Label, .ns-dark .nt-tab-strip__item:active, .ns-dark .nt-tab-strip__item:active Label ": [
+        "color",
+        "}"
+    ],
+    "TabContentItem, .nt-tab-content__item ": [
+        "background",
+        "}"
+    ],
+    ".ns-dark TabContentItem, .ns-dark .nt-tab-content__item ": [
+        "background",
+        "}"
+    ],
+    "ListView, RadListView, .nt-list-view ": [
+        "item-selected-background-color",
+        "separator-color",
+        "}"
+    ],
+    ".ns-dark ListView, .ns-dark RadListView, .ns-dark .nt-list-view ": [
+        "separator-color",
+        "}"
+    ],
+    "ListView>*.active, ListView>*:highlighted, RadListView>*.active, RadListView>*:highlighted, .nt-list-view>*.active, .nt-list-view>*:highlighted ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark ListView>*.active, .ns-dark ListView>*:highlighted, .ns-dark RadListView>*.active, .ns-dark RadListView>*:highlighted, .ns-dark .nt-list-view>*.active, .ns-dark .nt-list-view>*:highlighted ": [
+        "background-color",
+        "}"
+    ],
+    "ListView .-separator, RadListView .-separator, .nt-list-view .-separator ": [
+        "border-bottom-color",
+        "}"
+    ],
+    ".ns-dark ListView .-separator, .ns-dark RadListView .-separator, .ns-dark .nt-list-view .-separator ": [
+        "border-bottom-color",
+        "}"
+    ],
+    "ListView .nt-list-view__delete, RadListView .nt-list-view__delete, .nt-list-view .nt-list-view__delete ": [
+        "background-color",
+        "}"
+    ],
+    "ListView .nt-list-view__delete>Label, RadListView .nt-list-view__delete>Label, .nt-list-view .nt-list-view__delete>Label ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark ListView .nt-list-view__delete>Label, .ns-dark RadListView .nt-list-view__delete>Label, .ns-dark .nt-list-view .nt-list-view__delete>Label ": [
+        "color",
+        "}"
+    ],
+    "ListView .nt-icon, RadListView .nt-icon, .nt-list-view .nt-icon ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark ListView .nt-icon, .ns-dark RadListView .nt-icon, .ns-dark .nt-list-view .nt-icon ": [
+        "color",
+        "}"
+    ],
+    "RadSideDrawer .nt-drawer__header, .nt-drawer .nt-drawer__header ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "RadSideDrawer>*, RadSideDrawer .nt-drawer__content, .nt-drawer>*, .nt-drawer .nt-drawer__content ": [
+        "background-color",
+        "}"
+    ],
+    "RadSideDrawer .nt-drawer__list-item.-selected, .nt-drawer .nt-drawer__list-item.-selected ": [
+        "background-color",
+        "}"
+    ],
+    "RadSideDrawer .nt-drawer__list-item.-selected Label, .nt-drawer .nt-drawer__list-item.-selected Label ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark RadSideDrawer .nt-drawer__header, RadSideDrawer.ns-dark .nt-drawer__header, .ns-dark .nt-drawer .nt-drawer__header, .nt-drawer.ns-dark .nt-drawer__header ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark RadSideDrawer>*, .ns-dark RadSideDrawer .nt-drawer__content, RadSideDrawer.ns-dark>*, RadSideDrawer.ns-dark .nt-drawer__content, .ns-dark .nt-drawer>*, .ns-dark .nt-drawer .nt-drawer__content, .nt-drawer.ns-dark>*, .nt-drawer.ns-dark .nt-drawer__content ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark RadSideDrawer .nt-drawer__list-item.-selected, RadSideDrawer.ns-dark .nt-drawer__list-item.-selected, .ns-dark .nt-drawer .nt-drawer__list-item.-selected, .nt-drawer.ns-dark .nt-drawer__list-item.-selected ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark RadSideDrawer .nt-drawer__list-item.-selected Label, RadSideDrawer.ns-dark .nt-drawer__list-item.-selected Label, .ns-dark .nt-drawer .nt-drawer__list-item.-selected Label, .nt-drawer.ns-dark .nt-drawer__list-item.-selected Label ": [
+        "color",
+        "}"
+    ],
+    "Form .nt-form__title, .nt-form .nt-form__title ": [
+        "font-size",
+        "}"
+    ],
+    "Form .nt-form__link, .nt-form .nt-form__link ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark Form .nt-form__link, .ns-dark .nt-form .nt-form__link ": [
+        "color",
+        "}"
+    ],
+    "Form .nt-form__validation-message, .nt-form .nt-form__validation-message ": [
+        "color",
+        "}"
+    ],
+    "Form[isEnabled=false] *, .nt-form[isEnabled=false] * ": [
+        "opacity",
+        "}"
+    ],
+    ".nt-input, TextView, TextField, PickerField, DatePickerField, TimePickerField, DateTimePickerFields, DataFormEditorCore, RadAutoCompleteTextView ": [
+        "background-color",
+        "color",
+        "placeholder-color",
+        "border-color",
+        "}"
+    ],
+    ".ns-dark .nt-input, .ns-dark TextView, .ns-dark TextField, .ns-dark PickerField, .ns-dark DatePickerField, .ns-dark TimePickerField, .ns-dark DateTimePickerFields, .ns-dark DataFormEditorCore, .ns-dark RadAutoCompleteTextView ": [
+        "color",
+        "placeholder-color",
+        "border-color",
+        "}"
+    ],
+    ".nt-input:focus, TextView:focus, TextField:focus, PickerField:focus, DatePickerField:focus, TimePickerField:focus, DateTimePickerFields:focus, DataFormEditorCore:focus, RadAutoCompleteTextView:focus ": [
+        "border-color",
+        "}"
+    ],
+    ".ns-dark .nt-input:focus, .ns-dark TextView:focus, .ns-dark TextField:focus, .ns-dark PickerField:focus, .ns-dark DatePickerField:focus, .ns-dark TimePickerField:focus, .ns-dark DateTimePickerFields:focus, .ns-dark DataFormEditorCore:focus, .ns-dark RadAutoCompleteTextView:focus ": [
+        "border-color",
+        "}"
+    ],
+    ".nt-input[isEnabled=false], TextView[isEnabled=false], TextField[isEnabled=false], PickerField[isEnabled=false], DatePickerField[isEnabled=false], TimePickerField[isEnabled=false], DateTimePickerFields[isEnabled=false], DataFormEditorCore[isEnabled=false], RadAutoCompleteTextView[isEnabled=false] ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark .nt-input[isEnabled=false], .ns-dark TextView[isEnabled=false], .ns-dark TextField[isEnabled=false], .ns-dark PickerField[isEnabled=false], .ns-dark DatePickerField[isEnabled=false], .ns-dark TimePickerField[isEnabled=false], .ns-dark DateTimePickerFields[isEnabled=false], .ns-dark DataFormEditorCore[isEnabled=false], .ns-dark RadAutoCompleteTextView[isEnabled=false] ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "PropertyEditor:focus DataFormEditorCore ": [
+        "border-color",
+        "}"
+    ],
+    ".ns-dark PropertyEditor:focus DataFormEditorCore ": [
+        "border-color",
+        "}"
+    ],
+    "RadAutoCompleteTextView Token ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark RadAutoCompleteTextView Token ": [
+        "background-color",
+        "}"
+    ],
+    "RadAutoCompleteTextView Token:selected ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark RadAutoCompleteTextView Token:selected ": [
+        "background-color",
+        "}"
+    ],
+    "RadAutoCompleteTextView ClearButton ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark RadAutoCompleteTextView ClearButton ": [
+        "color",
+        "}"
+    ],
+    "RadAutoCompleteTextView SuggestionView ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark RadAutoCompleteTextView SuggestionView ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "RadDataForm ": [
+        "color",
+        "placeholder-color",
+        "}"
+    ],
+    ".ns-dark RadDataForm ": [
+        "color",
+        "placeholder-color",
+        "}"
+    ],
+    "RadDataForm PropertyEditor ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark RadDataForm PropertyEditor ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "PickerPage ListView ": [
+        "color",
+        "background",
+        "}"
+    ],
+    ".ns-dark PickerPage ListView ": [
+        "color",
+        "background",
+        "}"
+    ],
+    "PickerPage ListView>* ": [
+        "border-bottom-color",
+        "}"
+    ],
+    ".ns-dark PickerPage ListView>* ": [
+        "border-bottom-color",
+        "}"
+    ],
+    "PickerPage.ns-dark ListView, .ns-dark SuggestionView ": [
+        "color",
+        "background",
+        "}"
+    ],
+    ".date-time-picker ": [
+        "color",
+        "background",
+        "}"
+    ],
+    ".date-time-picker.ns-dark ": [
+        "color",
+        "background",
+        "}"
+    ],
+    ".date-time-picker-buttons ": [
+        "color",
+        "}"
+    ],
+    ".date-time-picker-buttons.ns-dark ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark.date-time-picker-button-cancel ": [
+        "background",
+        "}"
+    ],
+    ".date-time-picker-spinners ": [
+        "color",
+        "}"
+    ],
+    ".date-time-picker-spinners.ns-dark ": [
+        "color",
+        "}"
+    ],
+    "DataFormEditorLabel, .nt-input>.nt-label, .nt-input>Label ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark DataFormEditorLabel, .ns-dark .nt-input>.nt-label, .ns-dark .nt-input>Label ": [
+        "color",
+        "}"
+    ],
+    "ActionBar, .nt-action-bar ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark ActionBar, .ns-dark .nt-action-bar ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "ActionBar Label, ActionBar Button, ActionBar .nt-action-bar__item, .nt-action-bar Label, .nt-action-bar Button, .nt-action-bar .nt-action-bar__item ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    ".ns-dark ActionBar Label, .ns-dark ActionBar Button, .ns-dark ActionBar .nt-action-bar__item, .ns-dark .nt-action-bar Label, .ns-dark .nt-action-bar Button, .ns-dark .nt-action-bar .nt-action-bar__item ": [
+        "color",
+        "background-color",
+        "}"
+    ],
+    "ActionBar Label:active, ActionBar Label.-active, ActionBar Button:active, ActionBar Button.-active, ActionBar .nt-action-bar__item:active, ActionBar .nt-action-bar__item.-active, .nt-action-bar Label:active, .nt-action-bar Label.-active, .nt-action-bar Button:active, .nt-action-bar Button.-active, .nt-action-bar .nt-action-bar__item:active, .nt-action-bar .nt-action-bar__item.-active ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark ActionBar Label:active, .ns-dark ActionBar Label.-active, .ns-dark ActionBar Button:active, .ns-dark ActionBar Button.-active, .ns-dark ActionBar .nt-action-bar__item:active, .ns-dark ActionBar .nt-action-bar__item.-active, .ns-dark .nt-action-bar Label:active, .ns-dark .nt-action-bar Label.-active, .ns-dark .nt-action-bar Button:active, .ns-dark .nt-action-bar Button.-active, .ns-dark .nt-action-bar .nt-action-bar__item:active, .ns-dark .nt-action-bar .nt-action-bar__item.-active ": [
+        "color",
+        "}"
+    ],
+    ".ns-ios ActionBar Label, .ns-ios ActionBar Label:active, .ns-ios ActionBar Button, .ns-ios ActionBar Button:active, .ns-ios ActionBar .nt-action-bar__item, .ns-ios ActionBar .nt-action-bar__item:active, .ns-ios .nt-action-bar Label, .ns-ios .nt-action-bar Label:active, .ns-ios .nt-action-bar Button, .ns-ios .nt-action-bar Button:active, .ns-ios .nt-action-bar .nt-action-bar__item, .ns-ios .nt-action-bar .nt-action-bar__item:active ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark.ns-ios ActionBar Label, .ns-dark.ns-ios ActionBar Label:active, .ns-dark.ns-ios ActionBar Button, .ns-dark.ns-ios ActionBar Button:active, .ns-dark.ns-ios ActionBar .nt-action-bar__item, .ns-dark.ns-ios ActionBar .nt-action-bar__item:active, .ns-dark.ns-ios .nt-action-bar Label, .ns-dark.ns-ios .nt-action-bar Label:active, .ns-dark.ns-ios .nt-action-bar Button, .ns-dark.ns-ios .nt-action-bar Button:active, .ns-dark.ns-ios .nt-action-bar .nt-action-bar__item, .ns-dark.ns-ios .nt-action-bar .nt-action-bar__item:active ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-android ActionBar Button, .ns-android ActionBar .nt-button, .ns-android .nt-action-bar Button, .ns-android .nt-action-bar .nt-button ": [
+        "background-color",
+        "}"
+    ],
+    ".ns-dark.ns-android ActionBar Button, .ns-dark.ns-android ActionBar .nt-button, .ns-dark.ns-android .nt-action-bar Button, .ns-dark.ns-android .nt-action-bar .nt-button ": [
+        "background-color",
+        "}"
+    ],
+    ".text-primary ": [
+        "color",
+        "}"
+    ],
+    ".ns-dark .text-primary ": [
+        "color",
+        "}"
+    ],
+    ".text-danger ": [
+        "color",
+        "}"
+    ],
+    ".bg-primary ": [
+        "background-color",
+        "color",
+        "}"
+    ],
+    ".ns-dark .bg-primary ": [
+        "background-color",
+        "}"
+    ],
+    ".bg-danger ": [
+        "background-color",
+        "color",
+        "}"
+    ],
+    ".img-rounded ": [
+        "border-radius",
+        "}"
+    ],
+    ".img-circle ": [
+        "border-radius",
+        "}"
+    ],
+    ".hr ": [
+        "border-color",
+        "}"
+    ],
+    ".ns-dark .hr ": [
+        "border-color",
+        "}"
+    ],
+    ".hr-light ": [
+        "border-color",
+        "}"
+    ],
+    ".ns-dark .hr-light ": [
+        "border-color",
+        "}"
+    ],
+    ".hr-dark ": [
+        "border-color",
+        "}"
+    ],
+    ".ns-dark .hr-dark ": [
+        "border-color",
+        "}"
+    ],
+    ".ns-root, .ns-modal ": [
+        "--color-black",
+        "#000;",
+        "--color-white",
+        "#fff;",
+        "--color-grey",
+        "#e0e0e0;",
+        "--color-grey-light",
+        "#bababa;",
+        "--color-charcoal",
+        "#303030;",
+        "--color-transparent",
+        "transparent;",
+        "--color-aqua",
+        "#00caab;",
+        "--color-blue",
+        "#3a53ff;",
+        "--color-brown",
+        "#795548;",
+        "--color-forest",
+        "#006968;",
+        "--color-grey-dark",
+        "#5c687c;",
+        "--color-purple",
+        "#8130ff;",
+        "--color-lemon",
+        "#ffea00;",
+        "--color-lime",
+        "#aee406;",
+        "--color-orange",
+        "#f57c00;",
+        "--color-ruby",
+        "#ff1744;",
+        "--color-sky",
+        "#30bcff;",
+        "--color-error",
+        "#d50000;",
+        "--const-font-size",
+        "12;",
+        "--const-background-alt-10",
+        "#c0ebff;",
+        "--const-btn-color-secondary",
+        "#01a0ec;",
+        "--const-btn-color-disabled",
+        "#a4a4a4;",
+        "--const-btn-font-size",
+        "14;",
+        "--const-btn-min-width",
+        "64;",
+        "--const-btn-height",
+        "52;",
+        "--const-btn-padding-x",
+        "5;",
+        "--const-btn-padding-y",
+        "0;",
+        "--const-btn-margin-x",
+        "16;",
+        "--const-btn-margin-y",
+        "8;",
+        "--const-btn-radius",
+        "0;",
+        "--const-headings-margin-bottom",
+        "4;",
+        "--const-headings-font-weight",
+        "normal;",
+        "--const-border-width",
+        "1;",
+        "--const-border-radius",
+        ";",
+        "--const-border-radius-sm",
+        "4;",
+        "--const-border-radius-lg",
+        "50%;",
+        "--const-icon-font-size",
+        "12;",
+        "--const-icon-font-size-lg",
+        "16;",
+        "--const-disabled-opacity",
+        "0.5;",
+        "--light-primary",
+        "#262626;",
+        "--light-background",
+        "#fff;",
+        "--light-secondary",
+        "black;",
+        "--light-accent",
+        "#5c687c;",
+        "--light-complementary",
+        "#ffea00;",
+        "--light-complementary-color",
+        "#303030;",
+        "--light-btn-color",
+        "#262626;",
+        "--light-border-color",
+        "#30bcff;",
+        "--light-background-alt-5",
+        "#f2f2f2;",
+        "--light-background-alt-10",
+        "#e6e6e6;",
+        "--light-background-alt-20",
+        "#cccccc;",
+        "--light-disabled",
+        "#bec3cb;",
+        "--light-text-color",
+        "#262626;",
+        "--light-headings-color",
+        "#262626;",
+        "--light-tab-text-color",
+        "#b8bcc2;",
+        "--light-accent-dark",
+        "#313741;",
+        "--light-accent-light",
+        "#919bad;",
+        "--light-accent-transparent",
+        "rgba(92,104,124,0.8);",
+        "--light-primary-accent",
+        "rgba(92,104,124,0.4);",
+        "--light-background-accent",
+        "rgba(92,104,124,0.1);",
+        "--light-background-dark-accent",
+        "rgba(92,104,124,0.15);",
+        "--light-item-active-color",
+        "#676767;",
+        "--light-item-active-background",
+        "rgba(92,104,124,0.15);",
+        "--light-complementary-dark",
+        "#e6d300;",
+        "--light-item-active-icon-color",
+        "#676767;",
+        "--light-btn-color-inverse",
+        "white;",
+        "--light-btn-color-secondary",
+        "#0d0d0d;",
+        "--dark-primary",
+        "white;",
+        "--dark-background",
+        "#303030;",
+        "--dark-secondary",
+        "#b3b3b3;",
+        "--dark-accent",
+        "#748198;",
+        "--dark-complementary",
+        "#e6d300;",
+        "--dark-btn-color",
+        "#fff;",
+        "--dark-border-color",
+        "#748198;",
+        "--dark-background-alt-5",
+        "#3d3d3d;",
+        "--dark-background-alt-10",
+        "#4a4a4a;",
+        "--dark-background-alt-20",
+        "#636363;",
+        "--dark-disabled",
+        "#4b505a;",
+        "--dark-text-color",
+        "white;",
+        "--dark-headings-color",
+        "white;",
+        "--dark-tab-text-color",
+        "#c0c4ca;",
+        "--dark-accent-dark",
+        "#aeb6c3;",
+        "--dark-accent-light",
+        "#e9ebee;",
+        "--dark-accent-transparent",
+        "rgba(116,129,152,0.8);",
+        "--dark-primary-accent",
+        "rgba(116,129,152,0.4);",
+        "--dark-background-accent",
+        "rgba(116,129,152,0.1);",
+        "--dark-background-dark-accent",
+        "rgba(116,129,152,0.15);",
+        "--dark-item-active-color",
+        "#c1c1c1;",
+        "--dark-item-active-background",
+        "rgba(116,129,152,0.15);",
+        "--dark-complementary-color",
+        "black;",
+        "--dark-complementary-dark",
+        "#cdbc00;",
+        "--dark-item-active-icon-color",
+        "#c1c1c1;",
+        "--dark-btn-color-inverse",
+        "white;",
+        "--dark-btn-color-secondary",
+        "#e6e6e6",
+        "}"
+    ]
+}
