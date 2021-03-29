@@ -1,0 +1,665 @@
+{
+    "light": {
+        "Button": {
+            "Button, .nt-button ": [
+                "background-color",
+                "color",
+                "}"
+            ],
+            "Button:active, Button.-active, .nt-button:active, .nt-button.-active ": [
+                "color",
+                "}"
+            ],
+            "Button.-outline, .nt-button.-outline ": [
+                "background-color",
+                "border-color",
+                "}"
+            ],
+            "Button.-outline:active, Button.-outline.-active, .nt-button.-outline:active, .nt-button.-outline.-active ": [
+                "animation",
+                "background-color",
+                "}"
+            ],
+            "Button.-primary, .nt-button.-primary ": [
+                "color",
+                "background-color",
+                "border-color",
+                "}"
+            ],
+            "Button.-primary:active, Button.-primary.-active, .nt-button.-primary:active, .nt-button.-primary.-active ": [
+                "background-color",
+                "}"
+            ]
+        },
+        "ActivityIndicator": {
+            "ActivityIndicator, .nt-activity-indicator ": [
+                "color",
+                "}"
+            ]
+        },
+        "SegmentedBar": {
+            "SegmentedBar, .nt-segmented-bar ": [
+                "color",
+                "background-color",
+                "selected-background-color",
+                "}"
+            ],
+            ".ns-ios SegmentedBar, .ns-ios .nt-segmented-bar ": [
+                "margin",
+                "}"
+            ]
+        },
+        "Progress": {
+            "Progress, .nt-progress ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "Slider": {
+            "Slider, .nt-slider ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            "Slider[isEnabled=false], .ns-android Slider[isEnabled=false], .nt-slider[isEnabled=false], .ns-android .nt-slider[isEnabled=false] ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "SearchBar": {
+            "SearchBar, .nt-search-bar ": [
+                "color",
+                "background-color",
+                "text-field-hint-color",
+                "text-field-background-color",
+                "}"
+            ]
+        },
+        "Switch": {
+            ".ns-android Switch, .ns-android .nt-switch ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            ".ns-android Switch[checked=true], .ns-android .nt-switch[checked=true] ": [
+                "color",
+                "}"
+            ],
+            ".ns-android Switch[isEnabled=false], .ns-android .nt-switch[isEnabled=false] ": [
+                "color",
+                "}"
+            ],
+            ".ns-ios Switch, .ns-ios .nt-switch ": [
+                "color",
+                "background-color",
+                "off-background-color",
+                "}"
+            ],
+            ".ns-ios Switch[isEnabled=false], .ns-ios .nt-switch[isEnabled=false] ": [
+                "background-color",
+                "}"
+            ]
+        },
+        "TabView": {
+            "TabView, .nt-tab-view ": [
+                "selected-tab-text-color",
+                "tab-background-color",
+                "tab-text-color",
+                "android-selected-tab-highlight-color",
+                "}"
+            ]
+        },
+        "TabStrip": {
+            "TabStrip, .nt-tab-strip ": [
+                "highlight-color",
+                "background",
+                "}"
+            ],
+            "TabStripItem, .nt-tab-strip__item ": [
+                "color",
+                "}"
+            ],
+            "TabStripItem:active, TabStripItem:active Label, .nt-tab-strip__item:active, .nt-tab-strip__item:active Label ": [
+                "color",
+                "}"
+            ],
+            "TabContentItem, .nt-tab-content__item ": [
+                "background",
+                "}"
+            ]
+        },
+        "ListView": {
+            "ListView, RadListView, .nt-list-view ": [
+                "item-selected-background-color",
+                "separator-color",
+                "}"
+            ],
+            "ListView>*.active, ListView>*:highlighted, RadListView>*.active, RadListView>*:highlighted, .nt-list-view>*.active, .nt-list-view>*:highlighted ": [
+                "background-color",
+                "}"
+            ],
+            "ListView .-separator, RadListView .-separator, .nt-list-view .-separator ": [
+                "border-bottom-color",
+                "}"
+            ],
+            "ListView .nt-list-view__delete, RadListView .nt-list-view__delete, .nt-list-view .nt-list-view__delete ": [
+                "background-color",
+                "}"
+            ],
+            "ListView .nt-list-view__delete>Label, RadListView .nt-list-view__delete>Label, .nt-list-view .nt-list-view__delete>Label ": [
+                "color",
+                "}"
+            ],
+            "ListView .nt-icon, RadListView .nt-icon, .nt-list-view .nt-icon ": [
+                "color",
+                "}"
+            ]
+        },
+        "RadSideDrawer": {
+            "RadSideDrawer .nt-drawer__header, .nt-drawer .nt-drawer__header ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            "RadSideDrawer>*, RadSideDrawer .nt-drawer__content, .nt-drawer>*, .nt-drawer .nt-drawer__content ": [
+                "background-color",
+                "}"
+            ],
+            "RadSideDrawer .nt-drawer__list-item.-selected, .nt-drawer .nt-drawer__list-item.-selected ": [
+                "background-color",
+                "}"
+            ],
+            "RadSideDrawer .nt-drawer__list-item.-selected Label, .nt-drawer .nt-drawer__list-item.-selected Label ": [
+                "color",
+                "}"
+            ]
+        },
+        "Form": {
+            "Form .nt-form__title, .nt-form .nt-form__title ": [
+                "font-size",
+                "}"
+            ],
+            "Form .nt-form__link, .nt-form .nt-form__link ": [
+                "color",
+                "}"
+            ],
+            "Form .nt-form__validation-message, .nt-form .nt-form__validation-message ": [
+                "color",
+                "}"
+            ],
+            "Form[isEnabled=false] *, .nt-form[isEnabled=false] * ": [
+                "opacity",
+                "}"
+            ]
+        },
+        "TextView": {
+            ".nt-input, TextView, TextField, PickerField, DatePickerField, TimePickerField, DateTimePickerFields, DataFormEditorCore, RadAutoCompleteTextView ": [
+                "background-color",
+                "color",
+                "placeholder-color",
+                "border-color",
+                "}"
+            ],
+            ".nt-input:focus, TextView:focus, TextField:focus, PickerField:focus, DatePickerField:focus, TimePickerField:focus, DateTimePickerFields:focus, DataFormEditorCore:focus, RadAutoCompleteTextView:focus ": [
+                "border-color",
+                "}"
+            ],
+            ".nt-input[isEnabled=false], TextView[isEnabled=false], TextField[isEnabled=false], PickerField[isEnabled=false], DatePickerField[isEnabled=false], TimePickerField[isEnabled=false], DateTimePickerFields[isEnabled=false], DataFormEditorCore[isEnabled=false], RadAutoCompleteTextView[isEnabled=false] ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "PropertyEditor": {
+            "PropertyEditor:focus DataFormEditorCore ": [
+                "border-color",
+                "}"
+            ]
+        },
+        "RadAutoCompleteTextView": {
+            "RadAutoCompleteTextView Token ": [
+                "background-color",
+                "}"
+            ],
+            "RadAutoCompleteTextView Token:selected ": [
+                "background-color",
+                "}"
+            ],
+            "RadAutoCompleteTextView ClearButton ": [
+                "color",
+                "}"
+            ],
+            "RadAutoCompleteTextView SuggestionView ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "RadDataForm": {
+            "RadDataForm ": [
+                "color",
+                "placeholder-color",
+                "}"
+            ],
+            "RadDataForm PropertyEditor ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "PickerPage": {
+            "PickerPage ListView ": [
+                "color",
+                "background",
+                "}"
+            ],
+            "PickerPage ListView>* ": [
+                "border-bottom-color",
+                "}"
+            ]
+        },
+        "DateTimePicker": {
+            ".date-time-picker ": [
+                "color",
+                "background",
+                "}"
+            ],
+            ".date-time-picker-buttons ": [
+                "color",
+                "}"
+            ],
+            ".date-time-picker-spinners ": [
+                "color",
+                "}"
+            ]
+        },
+        "DataFormEditorLabel": {
+            "DataFormEditorLabel, .nt-input>.nt-label, .nt-input>Label ": [
+                "color",
+                "}"
+            ]
+        },
+        "ActionBar": {
+            "ActionBar, .nt-action-bar ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            "ActionBar Label, ActionBar Button, ActionBar .nt-action-bar__item, .nt-action-bar Label, .nt-action-bar Button, .nt-action-bar .nt-action-bar__item ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            "ActionBar Label:active, ActionBar Label.-active, ActionBar Button:active, ActionBar Button.-active, ActionBar .nt-action-bar__item:active, ActionBar .nt-action-bar__item.-active, .nt-action-bar Label:active, .nt-action-bar Label.-active, .nt-action-bar Button:active, .nt-action-bar Button.-active, .nt-action-bar .nt-action-bar__item:active, .nt-action-bar .nt-action-bar__item.-active ": [
+                "color",
+                "}"
+            ],
+            ".ns-ios ActionBar Label, .ns-ios ActionBar Label:active, .ns-ios ActionBar Button, .ns-ios ActionBar Button:active, .ns-ios ActionBar .nt-action-bar__item, .ns-ios ActionBar .nt-action-bar__item:active, .ns-ios .nt-action-bar Label, .ns-ios .nt-action-bar Label:active, .ns-ios .nt-action-bar Button, .ns-ios .nt-action-bar Button:active, .ns-ios .nt-action-bar .nt-action-bar__item, .ns-ios .nt-action-bar .nt-action-bar__item:active ": [
+                "background-color",
+                "}"
+            ],
+            ".ns-android ActionBar Button, .ns-android ActionBar .nt-button, .ns-android .nt-action-bar Button, .ns-android .nt-action-bar .nt-button ": [
+                "background-color",
+                "}"
+            ]
+        }
+    },
+    "dark": {
+        "Button": {
+            ".ns-dark Button, .ns-dark .nt-button ": [
+                "background-color",
+                "color",
+                "}"
+            ],
+            ".ns-dark Button:active, .ns-dark Button.-active, .ns-dark .nt-button:active, .ns-dark .nt-button.-active ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark Button.-outline, .ns-dark .nt-button.-outline ": [
+                "background-color",
+                "border-color",
+                "}"
+            ],
+            ".ns-dark Button.-outline:active, .ns-dark Button.-outline.-active, .ns-dark .nt-button.-outline:active, .ns-dark .nt-button.-outline.-active ": [
+                "animation",
+                "background-color",
+                "}"
+            ],
+            ".ns-dark Button.-primary, .ns-dark .nt-button.-primary ": [
+                "color",
+                "background-color",
+                "border-color",
+                "}"
+            ],
+            ".ns-dark Button.-primary:active, .ns-dark Button.-primary.-active, .ns-dark .nt-button.-primary:active, .ns-dark .nt-button.-primary.-active ": [
+                "background-color",
+                "}"
+            ]
+        },
+        "ActivityIndicator": {
+            ".ns-dark ActivityIndicator, .ns-dark .nt-activity-indicator ": [
+                "color",
+                "}"
+            ]
+        },
+        "SegmentedBar": {
+            ".ns-dark SegmentedBar, .ns-dark .nt-segmented-bar ": [
+                "color",
+                "background-color",
+                "selected-background-color",
+                "}"
+            ]
+        },
+        "Progress": {
+            ".ns-dark Progress, .ns-dark .nt-progress ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "Slider": {
+            ".ns-dark Slider, .ns-dark .nt-slider ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "SearchBar": {
+            ".ns-dark SearchBar, .ns-dark .nt-search-bar ": [
+                "color",
+                "background-color",
+                "text-field-hint-color",
+                "text-field-background-color",
+                "}"
+            ]
+        },
+        "Switch": {
+            ".ns-dark.ns-android Switch, .ns-dark.ns-android .nt-switch ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            ".ns-dark.ns-android Switch[checked=true], .ns-dark.ns-android .nt-switch[checked=true] ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark.ns-android Switch[isEnabled=false], .ns-dark.ns-android .nt-switch[isEnabled=false] ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark.ns-ios Switch, .ns-dark.ns-ios .nt-switch ": [
+                "color",
+                "background-color",
+                "off-background-color",
+                "}"
+            ],
+            ".ns-dark.ns-ios Switch[isEnabled=false], .ns-dark.ns-ios .nt-switch[isEnabled=false] ": [
+                "background-color",
+                "}"
+            ]
+        },
+        "TabView": {
+            ".ns-dark TabView, .ns-dark .nt-tab-view ": [
+                "selected-tab-text-color",
+                "tab-background-color",
+                "tab-text-color",
+                "android-selected-tab-highlight-color",
+                "}"
+            ],
+            "TabView.ns-dark, .nt-tab-view.ns-dark ": [
+                "selected-tab-text-color",
+                "tab-background-color",
+                "tab-text-color",
+                "android-selected-tab-highlight-color",
+                "}"
+            ]
+        },
+        "TabStrip": {
+            ".ns-dark TabStrip, .ns-dark .nt-tab-strip ": [
+                "highlight-color",
+                "background",
+                "}"
+            ],
+            ".ns-dark TabStripItem, .ns-dark .nt-tab-strip__item ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark TabStripItem:active, .ns-dark TabStripItem:active Label, .ns-dark .nt-tab-strip__item:active, .ns-dark .nt-tab-strip__item:active Label ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark TabContentItem, .ns-dark .nt-tab-content__item ": [
+                "background",
+                "}"
+            ]
+        },
+        "ListView": {
+            ".ns-dark ListView, .ns-dark RadListView, .ns-dark .nt-list-view ": [
+                "separator-color",
+                "}"
+            ],
+            ".ns-dark ListView>*.active, .ns-dark ListView>*:highlighted, .ns-dark RadListView>*.active, .ns-dark RadListView>*:highlighted, .ns-dark .nt-list-view>*.active, .ns-dark .nt-list-view>*:highlighted ": [
+                "background-color",
+                "}"
+            ],
+            ".ns-dark ListView .-separator, .ns-dark RadListView .-separator, .ns-dark .nt-list-view .-separator ": [
+                "border-bottom-color",
+                "}"
+            ],
+            ".ns-dark ListView .nt-list-view__delete>Label, .ns-dark RadListView .nt-list-view__delete>Label, .ns-dark .nt-list-view .nt-list-view__delete>Label ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark ListView .nt-icon, .ns-dark RadListView .nt-icon, .ns-dark .nt-list-view .nt-icon ": [
+                "color",
+                "}"
+            ]
+        },
+        "RadSideDrawer": {
+            ".ns-dark RadSideDrawer .nt-drawer__header, RadSideDrawer.ns-dark .nt-drawer__header, .ns-dark .nt-drawer .nt-drawer__header, .nt-drawer.ns-dark .nt-drawer__header ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            ".ns-dark RadSideDrawer>*, .ns-dark RadSideDrawer .nt-drawer__content, RadSideDrawer.ns-dark>*, RadSideDrawer.ns-dark .nt-drawer__content, .ns-dark .nt-drawer>*, .ns-dark .nt-drawer .nt-drawer__content, .nt-drawer.ns-dark>*, .nt-drawer.ns-dark .nt-drawer__content ": [
+                "background-color",
+                "}"
+            ],
+            ".ns-dark RadSideDrawer .nt-drawer__list-item.-selected, RadSideDrawer.ns-dark .nt-drawer__list-item.-selected, .ns-dark .nt-drawer .nt-drawer__list-item.-selected, .nt-drawer.ns-dark .nt-drawer__list-item.-selected ": [
+                "background-color",
+                "}"
+            ],
+            ".ns-dark RadSideDrawer .nt-drawer__list-item.-selected Label, RadSideDrawer.ns-dark .nt-drawer__list-item.-selected Label, .ns-dark .nt-drawer .nt-drawer__list-item.-selected Label, .nt-drawer.ns-dark .nt-drawer__list-item.-selected Label ": [
+                "color",
+                "}"
+            ]
+        },
+        "Form": {
+            ".ns-dark Form .nt-form__link, .ns-dark .nt-form .nt-form__link ": [
+                "color",
+                "}"
+            ]
+        },
+        "TextView": {
+            ".ns-dark .nt-input, .ns-dark TextView, .ns-dark TextField, .ns-dark PickerField, .ns-dark DatePickerField, .ns-dark TimePickerField, .ns-dark DateTimePickerFields, .ns-dark DataFormEditorCore, .ns-dark RadAutoCompleteTextView ": [
+                "color",
+                "placeholder-color",
+                "border-color",
+                "}"
+            ],
+            ".ns-dark .nt-input:focus, .ns-dark TextView:focus, .ns-dark TextField:focus, .ns-dark PickerField:focus, .ns-dark DatePickerField:focus, .ns-dark TimePickerField:focus, .ns-dark DateTimePickerFields:focus, .ns-dark DataFormEditorCore:focus, .ns-dark RadAutoCompleteTextView:focus ": [
+                "border-color",
+                "}"
+            ],
+            ".ns-dark .nt-input[isEnabled=false], .ns-dark TextView[isEnabled=false], .ns-dark TextField[isEnabled=false], .ns-dark PickerField[isEnabled=false], .ns-dark DatePickerField[isEnabled=false], .ns-dark TimePickerField[isEnabled=false], .ns-dark DateTimePickerFields[isEnabled=false], .ns-dark DataFormEditorCore[isEnabled=false], .ns-dark RadAutoCompleteTextView[isEnabled=false] ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "PropertyEditor": {
+            ".ns-dark PropertyEditor:focus DataFormEditorCore ": [
+                "border-color",
+                "}"
+            ]
+        },
+        "RadAutoCompleteTextView": {
+            ".ns-dark RadAutoCompleteTextView Token ": [
+                "background-color",
+                "}"
+            ],
+            ".ns-dark RadAutoCompleteTextView Token:selected ": [
+                "background-color",
+                "}"
+            ],
+            ".ns-dark RadAutoCompleteTextView ClearButton ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark RadAutoCompleteTextView SuggestionView ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "RadDataForm": {
+            ".ns-dark RadDataForm ": [
+                "color",
+                "placeholder-color",
+                "}"
+            ],
+            ".ns-dark RadDataForm PropertyEditor ": [
+                "color",
+                "background-color",
+                "}"
+            ]
+        },
+        "PickerPage": {
+            ".ns-dark PickerPage ListView ": [
+                "color",
+                "background",
+                "}"
+            ],
+            ".ns-dark PickerPage ListView>* ": [
+                "border-bottom-color",
+                "}"
+            ],
+            "PickerPage.ns-dark ListView, .ns-dark SuggestionView ": [
+                "color",
+                "background",
+                "}"
+            ]
+        },
+        "DateTimePicker": {
+            ".date-time-picker.ns-dark ": [
+                "color",
+                "background",
+                "}"
+            ],
+            ".date-time-picker-buttons.ns-dark ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark.date-time-picker-button-cancel ": [
+                "background",
+                "}"
+            ],
+            ".date-time-picker-spinners.ns-dark ": [
+                "color",
+                "}"
+            ]
+        },
+        "DataFormEditorLabel": {
+            ".ns-dark DataFormEditorLabel, .ns-dark .nt-input>.nt-label, .ns-dark .nt-input>Label ": [
+                "color",
+                "}"
+            ]
+        },
+        "ActionBar": {
+            ".ns-dark ActionBar, .ns-dark .nt-action-bar ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            ".ns-dark ActionBar Label, .ns-dark ActionBar Button, .ns-dark ActionBar .nt-action-bar__item, .ns-dark .nt-action-bar Label, .ns-dark .nt-action-bar Button, .ns-dark .nt-action-bar .nt-action-bar__item ": [
+                "color",
+                "background-color",
+                "}"
+            ],
+            ".ns-dark ActionBar Label:active, .ns-dark ActionBar Label.-active, .ns-dark ActionBar Button:active, .ns-dark ActionBar Button.-active, .ns-dark ActionBar .nt-action-bar__item:active, .ns-dark ActionBar .nt-action-bar__item.-active, .ns-dark .nt-action-bar Label:active, .ns-dark .nt-action-bar Label.-active, .ns-dark .nt-action-bar Button:active, .ns-dark .nt-action-bar Button.-active, .ns-dark .nt-action-bar .nt-action-bar__item:active, .ns-dark .nt-action-bar .nt-action-bar__item.-active ": [
+                "color",
+                "}"
+            ],
+            ".ns-dark.ns-ios ActionBar Label, .ns-dark.ns-ios ActionBar Label:active, .ns-dark.ns-ios ActionBar Button, .ns-dark.ns-ios ActionBar Button:active, .ns-dark.ns-ios ActionBar .nt-action-bar__item, .ns-dark.ns-ios ActionBar .nt-action-bar__item:active, .ns-dark.ns-ios .nt-action-bar Label, .ns-dark.ns-ios .nt-action-bar Label:active, .ns-dark.ns-ios .nt-action-bar Button, .ns-dark.ns-ios .nt-action-bar Button:active, .ns-dark.ns-ios .nt-action-bar .nt-action-bar__item, .ns-dark.ns-ios .nt-action-bar .nt-action-bar__item:active ": [
+                "background-color",
+                "}"
+            ],
+            ".ns-dark.ns-android ActionBar Button, .ns-dark.ns-android ActionBar .nt-button, .ns-dark.ns-android .nt-action-bar Button, .ns-dark.ns-android .nt-action-bar .nt-button ": [
+                "background-color",
+                "}"
+            ]
+        }
+    },
+    "globals": {
+        ".text-primary ": [
+            "color",
+            "}"
+        ],
+        ".ns-dark .text-primary ": [
+            "color",
+            "}"
+        ],
+        ".text-danger ": [
+            "color",
+            "}"
+        ],
+        ".bg-primary ": [
+            "background-color",
+            "color",
+            "}"
+        ],
+        ".ns-dark .bg-primary ": [
+            "background-color",
+            "}"
+        ],
+        ".bg-danger ": [
+            "background-color",
+            "color",
+            "}"
+        ],
+        ".img-rounded ": [
+            "border-radius",
+            "}"
+        ],
+        ".img-circle ": [
+            "border-radius",
+            "}"
+        ],
+        ".hr ": [
+            "border-color",
+            "}"
+        ],
+        ".ns-dark .hr ": [
+            "border-color",
+            "}"
+        ],
+        ".hr-light ": [
+            "border-color",
+            "}"
+        ],
+        ".ns-dark .hr-light ": [
+            "border-color",
+            "}"
+        ],
+        ".hr-dark ": [
+            "border-color",
+            "}"
+        ],
+        ".ns-dark .hr-dark ": [
+            "border-color",
+            "}"
+        ]
+    }
+}
