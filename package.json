@@ -6,9 +6,9 @@
   "bin": {
     "nstheme": "lib/src/index.js"
   },
-  "types": "./lib/src/index.d.ts",
+  "types": "./lib/**/**.d.ts",
   "files": [
-    "./lib/**/*"
+    "./lib/src/**/*"
   ],
   "scripts": {
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
@@ -18,8 +18,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepublish": "npm run test && npm run lint && npm run build",
-    "version": "npm run format",
-    "preversion": "npm run lint"
+    "version": "npm run format"
   },
   "repository": {
     "type": "git",
