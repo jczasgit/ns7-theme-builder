@@ -1154,13 +1154,13 @@ function _writeButton(ws: WriteStream, c: Classes, t: Theme): Promise<void> {
           switch (c.light.Button[classes[i]][j]) {
             case 'background-color':
               let color;
-              if (isOutlineButton) color = '#fff';
-              else if (isOutlineButtonActive) color = '#f2f2f2';
+              if (isOutlineButton) color = t.light.background;
+              else if (isOutlineButtonActive) color = colorUtility(t.light.background, -0.3);
               else color = t.light.primary;
               line = line + `background-color: ${color}; `;
               break;
             case 'color':
-              line = line + `color: ${colorUtility(t.light.textColor, -0.2)}; `;
+              line = line + `color: ${colorUtility(t.light.textColor, 0.5)}; `;
               break;
             case 'animation':
               line = line + `animation: -hightlight-light .3s ease-out forwards; `;
@@ -1191,9 +1191,9 @@ function _writeButton(ws: WriteStream, c: Classes, t: Theme): Promise<void> {
           switch (c.dark.Button[dark_classes[i]][j]) {
             case 'background-color':
               let color;
-              if (isOutlineButton) color = '#fff';
-              else if (isOutlineButtonActive) color = '#f2f2f2';
-              else color = t.dark.primary;
+              if (isOutlineButton) color = t.dark.background;
+              else if (isOutlineButtonActive) color = colorUtility(t.dark.background, 0.3);
+              else color = t.dark.backgroundAlt5;
               line = line + `background-color: ${color}; `;
               break;
             case 'color':
@@ -1529,21 +1529,21 @@ function _themeObjectFactory(answers: Answers): Theme {
       textColor: answers.darkTextColor,
       headingsColor: answers.darkHeadingsColor,
       tabTextColor: answers.darkTextColor,
-      backgroundAlt5: colorUtility(answers.lightBg, -0.05),
-      backgroundAlt10: colorUtility(answers.lightBg, -0.1),
-      backgroundAlt20: colorUtility(answers.lightBg, -0.2),
-      accentDark: colorUtility(answers.lightAccent, -0.3),
-      accentLight: colorUtility(answers.lightAccent, 0.2),
-      accentTransparent: alphaUtility(answers.lightAccent, 0.8),
-      primaryAccent: alphaUtility(answers.lightAccent, 0.4),
-      backgroundAccent: alphaUtility(answers.lightAccent, 0.1),
-      backgroundDarkAccent: alphaUtility(answers.lightAccent, 0.15),
-      itemActiveColor: answers.lightAccent,
-      itemActiveBackground: alphaUtility(answers.lightAccent, 0.15),
-      complementaryDark: colorUtility(answers.lightComplementary, -0.2),
-      itemActiveIconColor: answers.lightAccent,
-      btnColorInverse: invert(answers.lightBtnColor),
-      btnColorSecondary: colorUtility(answers.lightBtnColor, -0.2),
+      backgroundAlt5: colorUtility(answers.darkBg, -0.05),
+      backgroundAlt10: colorUtility(answers.darkBg, -0.1),
+      backgroundAlt20: colorUtility(answers.darkBg, -0.2),
+      accentDark: colorUtility(answers.darkAccent, -0.3),
+      accentLight: colorUtility(answers.darkAccent, 0.2),
+      accentTransparent: alphaUtility(answers.darkAccent, 0.8),
+      primaryAccent: alphaUtility(answers.darkAccent, 0.4),
+      backgroundAccent: alphaUtility(answers.darkAccent, 0.1),
+      backgroundDarkAccent: alphaUtility(answers.darkAccent, 0.15),
+      itemActiveColor: answers.darkAccent,
+      itemActiveBackground: alphaUtility(answers.darkAccent, 0.15),
+      complementaryDark: colorUtility(answers.darkComplementary, -0.2),
+      itemActiveIconColor: answers.darkAccent,
+      btnColorInverse: invert(answers.darkBtnColor),
+      btnColorSecondary: colorUtility(answers.darkBtnColor, -0.2),
     },
     common: {
       white: '#ffffff',

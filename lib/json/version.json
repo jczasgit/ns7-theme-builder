@@ -1,5 +1,5 @@
 {
-    "version": "0.0.8",
+    "version": "1.0.0",
     "description": "Nativescript 7 theme builder",
-    "buildCode": "8"
+    "buildCode": "9"
 }
