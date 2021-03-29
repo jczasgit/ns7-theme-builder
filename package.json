@@ -29,7 +29,11 @@
   "keywords": [
     "Nativescript",
     "Theme",
-    "Builder"
+    "Builder",
+    "cli",
+    "CLI",
+    "ns7",
+    "NS7"
   ],
   "author": "Juan Carlos Wu <jcwuchen00@gmail.com>",
   "license": "ISC",
