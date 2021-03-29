@@ -1,6 +1,6 @@
 {
   "name": "ns-7-theme-builder",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Nativescript 7 theme builder",
   "main": "./lib/index.js",
   "bin": {
@@ -18,8 +18,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepublish": "npm run test && npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags",
+    "version": "npm run format",
     "preversion": "npm run lint"
   },
   "repository": {
