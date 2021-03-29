@@ -17,7 +17,8 @@
         "create": "npm run test && npm run build",
         "format": "prettier --write \"src/**/*.ts\"",
         "prepublish": "npm run test && npm run build",
-        "version": "npm run format"
+        "version": "npm run format",
+        "postversion": "npm run build"
     },
     "repository": {
         "type": "git",
