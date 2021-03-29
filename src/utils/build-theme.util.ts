@@ -114,6 +114,29 @@ function _writeGlobalClasses(ws: WriteStream, t: Theme): Promise<void> {
   });
 }
 
+function _writeThemeColorVariables(ws: WriteStream, t: Theme): Promise<void> {
+  return new Promise<void>(async (resolve, reject) => {
+    try {
+      console.log(chalk.green('Setting light theme color variables...'));
+      const lightVariableNames = Object.entries(t.light);
+      for(let [name, color] of lightVariableNames) {
+        name = name.replace(/([A-Z])/g, ' $1').toLowerCase().replace(/\s/g, '-');
+        await _write(ws, `--light-${name}: ${color}; `);
+      }
+      
+      console.log(chalk.green('Setting dark theme color variables...'));
+      const darkVariableNames = Object.entries(t.dark);
+      for(let [name, color] of darkVariableNames) {
+        name = name.replace(/([A-Z])/g, ' $1').toLowerCase().replace(/\s/g, '-');
+        await _write(ws, `--dark-${name}: ${color}; `);
+      }
+      resolve();
+    } catch (error) {
+      reject(`"Error setting theme color variables." ERROR: ${error}`);
+    }
+  });
+}
+
 function _writeCommons(ws: WriteStream, t: Theme): Promise<void> {
   return new Promise<void>(async (resolve, reject) => {
     try {
@@ -127,6 +150,7 @@ function _writeCommons(ws: WriteStream, t: Theme): Promise<void> {
           .replace(/\s/g, '-');
         await _write(ws, `--${key}: ${value}; `);
       }
+      await _writeThemeColorVariables(ws, t);
       await _writeExtraColors(ws, t);
       await _write(ws, '} \n');
       resolve();
@@ -1136,7 +1160,7 @@ function _writeButton(ws: WriteStream, c: Classes, t: Theme): Promise<void> {
               line = line + `background-color: ${color}; `;
               break;
             case 'color':
-              line = line + `color: ${t.light.textColor}; `;
+              line = line + `color: ${colorUtility(t.light.textColor, -0.2)}; `;
               break;
             case 'animation':
               line = line + `animation: -hightlight-light .3s ease-out forwards; `;

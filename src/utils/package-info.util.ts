@@ -1,4 +1,4 @@
-import { version, description } from './../../package.json';
+import { version, description } from "./../json/version.json";
 
 function getVersion(): string {
   return `${String.fromCodePoint(0x1f4e6)}Version: ${version}`;

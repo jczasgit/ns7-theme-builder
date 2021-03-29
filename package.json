@@ -16,8 +16,7 @@
     "test": "jest --config jestconfig.json",
     "create": "npm run test && npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
-    "prepublish": "npm run test && npm run build",
-    "postversion": "npm run build"
+    "prepublish": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
