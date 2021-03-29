@@ -8,8 +8,8 @@
  * @returns The rounded number.
  */
 function round(value: number, decimals: number = 0): number {
-    let m = Math.pow(10, decimals);
-    return Math.round(value * m) / m;
+  let m = Math.pow(10, decimals);
+  return Math.round(value * m) / m;
 }
 
 export { round };
