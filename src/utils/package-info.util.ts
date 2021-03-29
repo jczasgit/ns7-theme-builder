@@ -1,7 +1,7 @@
-import { version, description } from "./../json/version.json";
+import { version, description, buildCode } from "./../json/version.json";
 
 function getVersion(): string {
-  return `${String.fromCodePoint(0x1f4e6)}Version: ${version}`;
+  return `${String.fromCodePoint(0x1f4e6)}Version: ${version}, Build-Code: ${buildCode}`;
 }
 
 function getDescription(): string {
