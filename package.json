@@ -2,13 +2,13 @@
   "name": "ns-7-theme-builder",
   "version": "0.0.5",
   "description": "Nativescript 7 theme builder",
-  "main": "./lib/src/index.js",
+  "main": "lib/src/index.js",
   "bin": {
     "nstheme": "lib/src/index.js"
   },
-  "types": "./lib/**/**.d.ts",
+  "types": "lib/**/**.d.ts",
   "files": [
-    "./lib/src/**/*"
+    "lib"
   ],
   "scripts": {
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
@@ -17,7 +17,6 @@
     "create": "npm run test && npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepublish": "npm run test && npm run build",
-    "version": "npm run format",
     "postversion": "npm run build"
   },
   "repository": {
