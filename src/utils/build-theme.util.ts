@@ -1,5 +1,5 @@
 import { prompt, QuestionCollection, Answers } from 'inquirer';
-import chalk from 'chalk';
+import chalk, { rgb } from 'chalk';
 import fs from 'fs';
 import path from 'path';
 import invert from 'invert-color';
@@ -12,6 +12,7 @@ import { Classes } from '../model/classes.model';
 
 export type HUE = [h: number, s: number, v: number];
 export type RGB = { r: number; g: number; b: number };
+export type HSL = { h: number, s: number, l: number };
 
 /**
  * Builds the nativescript theme file.
@@ -465,7 +466,7 @@ function _writeTextView(ws: WriteStream, c: Classes, t: Theme): Promise<void> {
               break;
             case 'color':
               if (/\[isEnabled=false\]/gi.test(classes[i])) line += `color: ${t.light.disabledColor}; `;
-              else line += `color: ${t.light.background}; `;
+              else line += `color: ${t.light.textColor}; `;
               break;
             case 'placeholder-color':
               line += `placeholder-color: ${t.common.greyLight}; `;
@@ -493,7 +494,7 @@ function _writeTextView(ws: WriteStream, c: Classes, t: Theme): Promise<void> {
               break;
             case 'color':
               if (/\[isEnabled=false\]/gi.test(dark_classes[i])) line += `color: ${t.dark.disabledColor}; `;
-              else line += `color: ${t.dark.background}; `;
+              else line += `color: ${t.dark.textColor}; `;
               break;
             case 'placeholder-color':
               line += `placeholder-color: ${t.common.greyDark}; `;
@@ -1160,7 +1161,9 @@ function _writeButton(ws: WriteStream, c: Classes, t: Theme): Promise<void> {
               line = line + `background-color: ${color}; `;
               break;
             case 'color':
-              line = line + `color: ${colorUtility(t.light.textColor, 0.5)}; `;
+              const rgb = hex2Rgb(t.light.primary);
+              const hsl = rgb2Hsl(rgb.r, rgb.g, rgb.b);
+              line = line + `color: ${round(hsl.l, 1) < 0.5 ? colorUtility(t.light.textColor, 0.5) : colorUtility(t.light.textColor, -0.8)}; `;
               break;
             case 'animation':
               line = line + `animation: -hightlight-light .3s ease-out forwards; `;
@@ -1197,7 +1200,9 @@ function _writeButton(ws: WriteStream, c: Classes, t: Theme): Promise<void> {
               line = line + `background-color: ${color}; `;
               break;
             case 'color':
-              line = line + `color: ${t.dark.textColor}; `;
+              const rgb = hex2Rgb(t.dark.backgroundAlt5);
+              const hsl = rgb2Hsl(rgb.r, rgb.g, rgb.b);
+              line = line + `color: ${hsl.l < 0.5 ? colorUtility(t.dark.textColor, 0.3) : colorUtility(t.dark.textColor, -0.3)}; `;
               break;
             case 'animation':
               line = line + `animation: -hightlight-light .3s ease-out forwards; `;
@@ -1242,6 +1247,83 @@ function _writeKeyframes(ws: WriteStream, keyframes: any): Promise<void> {
       reject(`"Error Writing keyframes." ERROR: ${error}`);
     }
   });
+}
+
+/**
+ * Convert rgb to hsl.
+ * RGB values have to be in range [0,255]
+ * Referenced from :
+ * https://axonflux.com/handy-rgb-to-hsl-and-rgb-to-hsv-color-model-c
+ * @param r red color value
+ * @param g green color value
+ * @param b blue color value
+ * @returns { h, s, l } values in range [0,1]
+ */
+function rgb2Hsl(r: number, g: number, b: number): HSL {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r,g,b);
+  const min = Math.min(r,g,b);
+  let h = 0;
+  let s = 0;
+  let l = (max + min) / 2;
+
+  if (max === min) {
+    h = s = 0;
+  } else {
+    const difference = max - min;
+    s = l > 0.5 ? difference / (2 - max - min) : difference / (max + min);
+    switch (max) {
+      case r: h = (g - b) / difference + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / difference + 2; break;
+      case b: h = (r - g) / difference + 4; break;
+      default: break;
+    }
+    h /= 6;
+  }
+
+  return { h, s, l };
+}
+
+/**
+ * Converts HUE to RGB
+ * Referenced from :
+ * https://axonflux.com/handy-rgb-to-hsl-and-rgb-to-hsv-color-model-c
+ * @param p 
+ * @param q 
+ * @param t 
+ * @returns r/g/b value depending on p, q, and t
+ */
+function hue2rgb(p: number, q: number, t: number) {
+  if(t < 0) t += 1;
+  if(t > 1) t -= 1;
+  if(t < 1/6) return p + (q - p) * 6 * t;
+  if(t < 1/2) return q;
+  if(t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+  return p;
+}
+
+/**
+ * Converts HSL to RGB.
+ * Referenced from :
+ * https://axonflux.com/handy-rgb-to-hsl-and-rgb-to-hsv-color-model-c
+ * @param hsl HSL {h,s,l} values in range [0,1]
+ * @returns RGB { r, g, b} values in range [0,255]
+ */
+function hsl2Rgb(hsl: HSL): RGB {
+  let r, g, b;
+  let { h, s, l } = hsl;
+
+    if(s == 0){
+        r = g = b = l;
+    }else{
+        let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        let p = 2 * l - q;
+        r = hue2rgb(p, q, h + 1/3);
+        g = hue2rgb(p, q, h);
+        b = hue2rgb(p, q, h - 1/3);
+    }
+
+    return { r: round(r * 255), g: round(g * 255), b: round(b * 255) };
 }
 
 function rgb2Hsv(r: number, g: number, b: number): HUE {
@@ -1391,6 +1473,8 @@ function alphaUtility(color: string, alpha: number): string {
   return result + color + a;
 }
 
+// todo: Implement RGBA utility
+
 /**
  * Asynchronous helper function that writes data into a file
  * with a WriteStream object.
@@ -1465,7 +1549,7 @@ function _answersFilter(answers: Answers): Answers {
     if (key === 'extra') {
       const extras: string[] = answers[key].split(/\s/);
       extras.map((color) => {
-        if (/^rgb/.test(color)) {
+        if (/^rgb/gi.test(color)) {
           const rgbRegex = /(rgb)\((\d{1,3}),(\d{1,3}),(\d{1,3})\)/i;
           let group = rgbRegex.exec(color) ?? ['rgb', '1', '1', '1'];
           let r: number = parseInt(group[2]);
@@ -1478,7 +1562,16 @@ function _answersFilter(answers: Answers): Answers {
       });
       answers[key] = extras;
     } else {
-      const color = answers[key].split(/\s/)[0];
+      let color = answers[key].split(/\s/)[0];
+      if (/^rgb/gi.test(color)) {
+        const rgbRegex = /(rgb)\((\d{1,3}),(\d{1,3}),(\d{1,3})\)/gi;
+        let group;
+        while ((group = rgbRegex.exec(color))) {
+          if (_validateRGB(parseInt(group[2]), parseInt(group[3]), parseInt(group[4]))) {
+            color = rgb2Hex(parseInt(group[2]), parseInt(group[3]), parseInt(group[4]));
+          }
+        }
+      }
       answers[key] = color;
     }
   }
@@ -1832,4 +1925,13 @@ function buildTheme() {
     });
 }
 
-export { buildTheme, rgb2Hex, colorUtility, rgb2Hsv, hex2Rgb, alphaUtility, hsv2Rgb };
+export { 
+  buildTheme, 
+  rgb2Hex, 
+  colorUtility, 
+  rgb2Hsv, 
+  hex2Rgb, 
+  alphaUtility, 
+  hsv2Rgb,
+  rgb2Hsl,
+  hsl2Rgb };

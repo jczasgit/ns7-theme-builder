@@ -32,4 +32,4 @@ If you have found a possible bug, please use the issues option on this repo to r
 ------------
 
 ##### Known Issues
-- Button component text color for light theme is not accurately generated causing the contrast to be minimal. Overall, the ui looks less readable and affects user experience.
+- It seems that using #RRGGBBAA does not work well in Nativescript. The alpha value does not apply correctly. Trying to add RGBA to the theme builder.

@@ -1,4 +1,4 @@
-import { colorUtility, rgb2Hex, rgb2Hsv, hex2Rgb, alphaUtility, hsv2Rgb } from './../utils/build-theme.util';
+import { colorUtility, rgb2Hex, rgb2Hsv, hex2Rgb, alphaUtility, hsv2Rgb, hsl2Rgb, rgb2Hsl } from './../utils/build-theme.util';
 
 test('Test colorUtility', () => {
   const result = colorUtility('#6699CC', 0.2);
@@ -73,4 +73,14 @@ test('Test alphaUtility', () => {
 test('Test hsv2Rgb', () => {
   const result = hsv2Rgb(0.699, 0.606, 0.925);
   expect(result).toEqual({ r: 121, g: 93, b: 236 });
+});
+
+test("Test rgb2Hsl", () => {
+  const result = rgb2Hsl(23, 55, 23);
+  expect(result.h).toEqual(120/360);
+});
+
+test("Test hsl2Rgb", () => {
+  const result = hsl2Rgb({h: 120/360, s: 0.41, l: 0.1529});
+  expect(result).toEqual({r: 23, g: 55, b: 23})
 });
