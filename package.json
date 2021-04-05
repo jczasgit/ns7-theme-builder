@@ -1,6 +1,6 @@
 {
   "name": "ns-7-theme-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Nativescript 7 theme builder",
   "main": "lib/index.js",
   "bin": {
