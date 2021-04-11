@@ -34,3 +34,9 @@ If you have found a possible bug, please use the issues option on this repo to r
 ##### Known Issues
 - It seems that using #RRGGBBAA does not work well in Nativescript. The alpha value does not apply correctly. Trying to add RGBA to the theme builder.
 - Dark Theme TextView text color is not set correctly causing it to have little contrast.
+
+## Goals
+- [ ] Decrease color inputs in order to build a theme.
+- [ ] Add choice to build detail/regular theme. **Detail takes more color inputs**
+- [ ] Add choice to generate modular styling. Such as generating style for buttons only.
+- [ ] Add configuration option to set default colors, destination, extra colors/properties.
