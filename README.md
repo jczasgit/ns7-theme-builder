@@ -1,6 +1,6 @@
 # NS7 Theme Builder CLI
 ### Instalation
-`npm i -g ns-7-theme-builder`
+`$ npm i -g ns-7-theme-builder`
 
 Build custom css theme for nativescript 7+ angular components.<br/>
 **NOTE: The generated css file is meant to be used in conjunction with nativescript core theme.**
@@ -16,6 +16,9 @@ After the installation, import the core theme in you app.css and the generated c
 For more information, visit [Nativescript official documentation](https://docs.nativescript.org/angular/ui/theme).
 
 ## CLI Commands & Options
+Default alias: `nstheme`
+Usage: `$ nstheme build`
+
 |  Command | Usage  | Description|
 | :------------: | :------------: |:-----------:|
 |  b, build | nstheme build | Initializes the cli to build a custom theme. The cli will ask for the neccessary colors (hexadecimal or rgb) to build the theme.|
