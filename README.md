@@ -6,7 +6,7 @@ Build custom css theme for nativescript 7+ angular components.<br/>
 **NOTE: The generated css file is meant to be used in conjunction with nativescript core theme.**
 
 ### Install Nativescript Core Theme
-`npm install @nativescript/theme --save`
+`$ npm install @nativescript/theme --save`
 
 After the installation, import the core theme in you app.css and the generated css file.
 ```css
