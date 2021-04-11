@@ -33,3 +33,4 @@ If you have found a possible bug, please use the issues option on this repo to r
 
 ##### Known Issues
 - It seems that using #RRGGBBAA does not work well in Nativescript. The alpha value does not apply correctly. Trying to add RGBA to the theme builder.
+- Dark Theme TextView text color is not set correctly causing it to have little contrast.
