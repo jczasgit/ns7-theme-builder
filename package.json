@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jczasgit/ns7-theme-builder.git"
+    "url": "git+https://github.com/juancwu/ns7-theme-builder.git"
   },
   "keywords": [
     "Nativescript",
@@ -34,9 +34,9 @@
   "author": "Juan Carlos Wu <jcwuchen00@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jczasgit/ns7-theme-builder/issues"
+    "url": "https://github.com/juancwu/ns7-theme-builder/issues"
   },
-  "homepage": "https://github.com/jczasgit/ns7-theme-builder#readme",
+  "homepage": "https://github.com/juancwu/ns7-theme-builder#readme",
   "dependencies": {
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
